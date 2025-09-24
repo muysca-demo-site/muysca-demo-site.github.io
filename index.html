@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muisca - Cultura Ancestral</title>
+    <meta name="description" content="Explora la rica cultura y tradiciones del pueblo Muisca a través de una experiencia interactiva">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     Progress Bar 
+    <div id="progress-bar" class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+     Navigation 
+    <nav id="navigation" class="navigation">
+        <div class="nav-content">
+            <div class="nav-sections">
+                <button class="nav-btn active" data-section="inicio" title="Inicio">🏔️</button>
+                <button class="nav-btn" data-section="parte1" title="Parte 1">🎨</button>
+                <button class="nav-btn" data-section="parte2" title="Parte 2">🌅</button>
+                <button class="nav-btn" data-section="parte3" title="Parte 3">🦅</button>
+                <button class="nav-btn" data-section="parte4" title="Parte 4">🌽</button>
+            </div>
+            <div class="nav-divider"></div>
+            <div class="nav-sections">
+                <button class="nav-btn" data-section="parte5" title="Parte 5">🌿</button>
+                <button class="nav-btn" data-section="parte6" title="Parte 6">🐍</button>
+                <button class="nav-btn" data-section="parte7" title="Parte 7">🐍</button>
+                <button class="nav-btn" data-section="parte8" title="Parte 8">🌙</button>
+            </div>
+            <div class="nav-divider"></div>
+            <button class="nav-btn" data-section="informacion" title="Información">ℹ️</button>
+            <button id="music-toggle" class="nav-btn" title="Música">🔊</button>
+        </div>
+    </nav>
+
+     Music Player 
+    <div id="music-player" class="music-player">
+        <audio id="background-music" loop preload="metadata">
+            <source src="/placeholder.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <button id="play-pause-btn" class="music-btn">Música</button>
+        <button id="mute-btn" class="music-btn">🔊</button>
+    </div>
+
+    <main>
+         Landing Section 
+        <section id="inicio" class="story-section landing-section">
+            <div class="section-bg cultural-pattern"></div>
+            <div class="section-bg parallax-bg" style="background-image: url('/ancient-rock-paintings-cave-art-muisca-indigenous-.jpg')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="logo-container">
+                    <div class="logo-icon">🏔️</div>
+                    <h1 class="main-title">Muisca</h1>
+                    <p class="subtitle">Cultura Ancestral</p>
+                </div>
+                
+                <div class="intro-card">
+                    <h2 class="intro-title">Descubre la sabiduría ancestral del pueblo Muisca</h2>
+                    <p class="intro-text">
+                        Un viaje interactivo a través de la rica cultura, tradiciones y cosmovisión de una de las civilizaciones más
+                        importantes de los Andes colombianos. Explora sus mitos, territorio sagrado y legado que perdura hasta hoy.
+                    </p>
+                </div>
+                
+                <button id="start-journey" class="cta-button">Empezar el Viaje</button>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 1 
+        <section id="parte1" class="story-section">
+            <div class="section-bg parallax-bg" style="background-image: url('/muisca-rock-paintings-petroglyphs-ancient-art-colo.jpg')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">Los Primeros Trazos</h2>
+                    <p class="story-text">
+                        En las rocas sagradas de la sabana, los ancestros Muiscas dejaron sus primeros mensajes.
+                        Estas pinturas rupestres narran historias de conexión con la naturaleza y el cosmos.
+                    </p>
+                    <div class="story-image">
+                        <img src="/muisca-rock-paintings-petroglyphs-ancient-art-colo.jpg" alt="Pinturas rupestres Muiscas" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 2 
+        <section id="parte2" class="story-section">
+            <div class="section-bg parallax-bg" style="background-image: url('/bogota-savanna-landscape-daytime-golden-sunlight-m.jpg')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">La Sabana Dorada</h2>
+                    <p class="story-text">
+                        Bajo el sol dorado de la sabana de Bogotá, el pueblo Muisca desarrolló una civilización próspera.
+                        Este territorio sagrado fue testigo de ceremonias, comercio y la vida cotidiana de una cultura milenaria.
+                    </p>
+                    <div class="video-container">
+                        <video controls poster="/bogota-savanna-landscape-daytime-golden-sunlight-m.jpg">
+                            <source src="/placeholder-video.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <button class="play-button">▶️</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 3 
+        <section id="parte3" class="story-section">
+            <div class="section-bg parallax-bg" style="background-image: url('/four-condors-flying-mountains-andean-birds-sacred.jpg')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">Los Cuatro Cóndores</h2>
+                    <p class="story-text">
+                        Los cóndores, mensajeros entre el mundo terrenal y el espiritual, guiaban las almas
+                        en su viaje eterno. Estas aves sagradas representaban la conexión con los dioses.
+                    </p>
+                    <div class="story-image">
+                        <img src="/four-condors-flying-mountains-andean-birds-sacred.jpg" alt="Cuatro cóndores volando" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 4 
+        <section id="parte4" class="story-section">
+            <div class="section-bg parallax-bg" style="background-image: url('/cosmic-space-particles-stars-nebula-universe-spiri.jpg')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">El Cosmos Sagrado</h2>
+                    <p class="story-text">
+                        Los Muiscas entendían el universo como un todo interconectado. Las partículas cósmicas
+                        y los astros influían en la vida terrenal, guiando las ceremonias y el calendario sagrado.
+                    </p>
+                    <div class="cosmic-video">
+                        <video autoplay muted loop>
+                            <source src="/cosmic-particles.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="story-details">
+                        <img src="/corn-maize-golden-grain-agriculture-muisca.jpg" alt="Maíz dorado" loading="lazy">
+                        <p>El maíz, regalo de los dioses, sustentaba la vida y las ceremonias sagradas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 5 
+        <section id="parte5" class="story-section">
+            <div class="section-bg" style="background-color: #1a4d3a;"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">Bachué, Madre de la Humanidad</h2>
+                    <p class="story-text">
+                        De las aguas sagradas de la laguna de Iguaque emergió Bachué con un niño en brazos.
+                        Ella pobló la tierra y enseñó a los Muiscas las leyes de la vida y la armonía.
+                    </p>
+                    <div class="story-gallery">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Plantas sagradas" loading="lazy">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Bachué" loading="lazy">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Territorio Muisca" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 6 
+        <section id="parte6" class="story-section">
+            <div class="section-bg" style="background-color: #2d1810;"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">La Primera Serpiente</h2>
+                    <p class="story-text">
+                        La serpiente ancestral, guardiana de la sabiduría, protegía los secretos de la tierra.
+                        Su poder se manifestaba en los rituales de transformación y renacimiento.
+                    </p>
+                    <div class="serpent-visual">
+                        <div class="serpent-pattern"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 7 
+        <section id="parte7" class="story-section">
+            <div class="section-bg" style="background-color: #1a2d1a;"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">La Segunda Serpiente</h2>
+                    <p class="story-text">
+                        La segunda serpiente completaba el ciclo cósmico, representando la dualidad
+                        y el equilibrio entre las fuerzas opuestas del universo.
+                    </p>
+                    <div class="serpent-visual">
+                        <div class="serpent-pattern serpent-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Story Section 8 
+        <section id="parte8" class="story-section">
+            <div class="section-bg parallax-bg" style="background-image: url('/placeholder.svg?height=1080&width=1920')"></div>
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <div class="story-card">
+                    <h2 class="story-title">El Ciclo Eterno</h2>
+                    <p class="story-text">
+                        Bajo la luna llena, la sabana de Bogotá se transforma. El ciclo eterno continúa,
+                        y la sabiduría Muisca perdura en cada amanecer y atardecer.
+                    </p>
+                    <div class="night-scene">
+                        <div class="moon"></div>
+                        <div class="stars"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Information Section 
+        <section id="informacion" class="story-section info-section">
+            <div class="section-bg" style="background-color: #0f1419;"></div>
+            
+            <div class="section-content">
+                <div class="info-card">
+                    <h2 class="info-title">Información y Enlaces</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h3>Aprende Más</h3>
+                            <ul class="info-links">
+                                <li><a href="#" target="_blank">Museo del Oro - Cultura Muisca</a></li>
+                                <li><a href="#" target="_blank">Historia de los Muiscas</a></li>
+                                <li><a href="#" target="_blank">Territorio Sagrado</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h3>Redes Sociales</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">Instagram</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h3>Agradecimientos</h3>
+                            <p>Gracias a las comunidades indígenas que preservan esta sabiduría ancestral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
